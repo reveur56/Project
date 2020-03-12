@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body
+{
+	background-color:#F6F2F2;
+}
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #F6F2F2;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #F6F2F2;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #F6F2F2;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #F6F2F2;
+  color: black;
+}
+
+.active {
+  background-color: #F6F2F2;
+  color: white;
+}
+
+
+
+.container {
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  float:right;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+a{
+  text-decoration:none;
+}
+.pro_name
+{
+	margin-top:3%;
+}
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="#home" class="active">Feed</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">About</a>
+    <a href="#about">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i>|||</i>
+  </a>
+</div>
+</div>
+<a href="new.html"><div class="container">
+  <img src="pic1.jfif" alt="Avatar" style="width:90px">
+  <p class="pro_name"><span>Sundar Pichai</span>
+  <i class="right"></i></p>
+</div>
+</a>
+<a href="sec.html"><div class="container">
+  <img src="pic2.jpg" alt="Avatar" style="width:90px">
+    <p class="pro_name"><span>Satya Nadella</span>
+  <i class="right"></i></p>
+</div></a>
+<a href="new.html"><div class="container">
+  <img src="pic3.jpg" alt="Avatar" style="width:90px">
+  <p class="pro_name"><span>Shantanu Narayen</span>
+  <i class="right"></i></p>
+</div>
+</a>
+<a href="fourth.html"><div class="container">
+  <img src="pic4.jpg" alt="Avatar" style="width:90px">
+    <p class="pro_name"><span>Ajaypal Singh Banga</span>
+  <i class="right"></i></p>
+</div></a>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
